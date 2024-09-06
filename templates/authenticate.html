@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}Logout{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+    <form method="post" action="/authenticate" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="username">
+        <button>Login</button>
+    </form>
+{% endblock %}
